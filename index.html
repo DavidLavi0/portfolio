@@ -7,88 +7,113 @@
     <link rel="stylesheet" href="style/style.css" />
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1 class="fade-in">Jsem </h1>
-            <h2 class="fade-in delay-1">Absolvent IT | Specialista na počítačové sítě</h2>
-            <p class="fade-in delay-2">Vynikám v počítačových sítích a tvorbě projektů, rád programuji a učím se nové technologie.</p>
-            <div class="buttons fade-in delay-3">
-                <a href="#contact" class="btn">Kontaktovat mě</a>
-                <a href="#" target="_blank" class="btn btn-outline">Můj GitHub</a>
+<header>
+    <div class="container">
+        <h1 class="fade-in">IT Absolvent & Síťový Specialista</h1>
+        <h2 class="fade-in delay-1">Linux • Sítě • Python • Bezpečnost</h2>
+        <p class="fade-in delay-2">Vynikám v počítačových sítích, správě Linux serverů a tvorbě praktických projektů. Neustále se učím nové technologie.</p>
+        <div class="buttons fade-in delay-3">
+            <a href="#contact" class="btn">Kontaktovat mě</a>
+            <a href="#" target="_blank" class="btn btn-outline">Můj GitHub</a>
+        </div>
+
+        <!-- Hamburger menu -->
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <!-- Navigace pro mobil -->
+        <nav class="mobile-nav" id="mobileNav">
+            <a href="#about">O mně</a>
+            <a href="#skills">Dovednosti</a>
+            <a href="#projects">Projekty</a>
+            <a href="#contact">Kontakt</a>
+        </nav>
+    </div>
+</header>
+
+<section id="about" class="container section">
+    <h2>O mně</h2>
+    <p>Jsem čerstvý absolvent IT se zaměřením na počítačové sítě, s praxí v Linuxu, konfiguraci routerů a zabezpečení sítí. Rád tvořím projekty a učím se nové technologie.</p>
+</section>
+
+<section id="skills" class="container section">
+    <h2>Moje dovednosti</h2>
+    <div class="skill-bar">
+        <span>Počítačové sítě</span>
+        <div class="bar"><div class="fill" data-level="40%"></div></div>
+    </div>
+    <div class="skill-bar">
+        <span>Linux / Server Admin</span>
+        <div class="bar"><div class="fill" data-level="15%"></div></div>
+    </div>
+    <div class="skill-bar">
+        <span>Python</span>
+        <div class="bar"><div class="fill" data-level="75%"></div></div>
+    </div>
+    <div class="skill-bar">
+        <span>HTML, CSS, JavaScript</span>
+        <div class="bar"><div class="fill" data-level="60%"></div></div>
+    </div>
+</section>
+
+<section id="projects" class="container section">
+    <h2>Projekty</h2>
+    <div class="projects-grid">
+        <div class="project-card">
+            <img src="obrazky/web.png" alt="Simulátor sítě" />
+            <div class="project-info">
+                <h3>Simulátor sítě</h3>
+                <p>Python aplikace pro modelování LAN.</p>
+                <a href="#">Detail projektu →</a>
             </div>
         </div>
-    </header>
-
-    <section id="about" class="container section">
-        <h2>O mně</h2>
-        <p>Jsem čerstvý absolvent IT se zaměřením na počítačové sítě, se znalostmi v Linuxu, konfiguraci routerů a bezpečnosti sítí. Mám rád praktické projekty a rád se učím nové věci.</p>
-    </section>
-
-    <section id="projects" class="container section">
-        <h2>Projekty</h2>
-        <ul>
-            <li><strong>Simulátor počítačové sítě</strong> – aplikace pro modelování a testování sítí, napsaná v Pythonu.</li>
-            <li><strong>Webová stránka pro školní projekt</strong> – vytvořená pomocí HTML, CSS a JavaScriptu.</li>
-            <li><strong>Bezpečnostní analýza sítě</strong> – report a doporučení pro zlepšení bezpečnosti školní sítě.</li>
-        </ul>
-    </section>
-
-    <section id="carousel" class="container section">
-        <h2>Projekty</h2>
-        <div class="carousel-wrapper">
-            <div class="carousel" id="carousel">
-                <div class="card">Projekt 1<br><small>Simulátor sítě</small></div>
-                <div class="card">Projekt 2<br><small>Web školního projektu</small></div>
-                <div class="card">Projekt 3<br><small>Bezpečnostní analýza</small></div>
-                <div class="card">Projekt 4<br><small>Automatizace sítí</small></div>
-                <div class="card">Projekt 5<br><small>Monitoring sítě</small></div>
-                <!-- Duplikáty pro infinite scroll -->
-                <div class="card">Projekt 1<br><small>Simulátor sítě</small></div>
-                <div class="card">Projekt 2<br><small>Web školního projektu</small></div>
-                <div class="card">Projekt 3<br><small>Bezpečnostní analýza</small></div>
-                <div class="card">Projekt 4<br><small>Automatizace sítí</small></div>
-                <div class="card">Projekt 5<br><small>Monitoring sítě</small></div>
+        <div class="project-card">
+            <img src="obrazky/web.png" alt="Web školního projektu" />
+            <div class="project-info">
+                <h3>Web školního projektu</h3>
+                <p>HTML, CSS a JavaScript projekt pro školní úkol.</p>
+                <a href="#">Detail projektu →</a>
             </div>
         </div>
-    </section>
-    
-
-    <section id="skills" class="container section">
-        <h2>Moje dovednosti</h2>
-        <div class="skill-group">
-            <h3>Počítačové sítě</h3>
-            <ul>
-                <li>Konfigurace routerů a přepínačů</li>
-                <li>Správa Linux serverů</li>
-                <li>Firewall a zabezpečení sítí</li>
-                <li>TCP/IP, DNS, DHCP</li>
-            </ul>
+        <div class="project-card">
+            <img src="obrazky/web.png" alt="Bezpečnostní analýza" />
+            <div class="project-info">
+                <h3>Bezpečnostní analýza</h3>
+                <p>Analýza a doporučení pro školní síť.</p>
+                <a href="#">Detail projektu →</a>
+            </div>
         </div>
-        <div class="skill-group">
-            <h3>Programování a web</h3>
-            <ul>
-                <li>Python</li>
-                <li>HTML, CSS, JavaScript</li>
-                <li>Základy SQL</li>
-            </ul>
+        <div class="project-card">
+            <img src="obrazky/web.png" alt="Automatizace sítí" />
+            <div class="project-info">
+                <h3>Automatizace sítí</h3>
+                <p>Python skripty pro správu a monitoring sítě.</p>
+                <a href="#">Detail projektu →</a>
+            </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="contact" class="container section">
-        <h2>Kontakt</h2>
-        <form id="contactForm">
-            <input type="text" id="name" name="name" placeholder="Jméno" required />
-            <input type="email" id="email" name="email" placeholder="Email" required />
-            <textarea id="message" name="message" placeholder="Zpráva" rows="5" required></textarea>
-            <button type="submit">Odeslat</button>
-            <p id="formMessage"></p>
-        </form>
-    </section>
 
-    <footer>
-        <p>© 2026| <a href="#" target="_blank">GitHub</a></p>
-    </footer>
 
-    <script src="script/script.js"></script>
+<section id="contact" class="container section">
+    <h2>Kontakt</h2>
+    <form id="contactForm">
+        <input type="text" name="name" placeholder="Jméno" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <textarea name="message" placeholder="Zpráva" rows="5" required></textarea>
+        <button type="submit">Odeslat</button>
+        <div id="formMessage"></div>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 | <a href="#" target="_blank">GitHub</a></p>
+</footer>
+
+<script src="script/script.js"></script>
 </body>
 </html>
